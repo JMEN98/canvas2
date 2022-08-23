@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/2.4.6/fabric.min.js"></script>
+
+
+<center>
+  <h5>welcome to jeff FreeFrom Shapes </h5> 
+   <h3>pleace click draw mode to start drawing </h3>
+
+</center>
+ 
+<center>
+         
+<button id="drawEnabled">Draw Mode</button>
+<button id="editEnabled">Edit Mode</button>
+  <button id="b">remove </button>
+</center>
+  
+
+<div id ="lineThicknessSelectbox">
+<select id="lineThickness" onChange = "changeThickness()">
+<!--   <option selected disabled hidden>Line Thickness</option> -->
+  <option selected >0.06in</option>
+  <option>0.032in</option>
+  <option>0.024in</option>
+  <option>0.016in</option>
+  <option>0.012in</option>
+  <option>0.010in</option>
+    </select> </div>
+    
+<center>
+<canvas id="drawContainer" width="500" height="500" style="border:1px solid #aaa"></canvas>
+</center>
+
+<center>
+  <label for="penColor">Pen Color:</label>
+    <input type="color" id="penColor" value="#000000">
+    
+</center>
+<Center>
+  <button class="print-or-save">Print or Save Document</button>
+</Center>
+
+
+</body>
+<script src="index.js"></script>
+<link rel="stylesheet" href="index.css" > </link>
+</html>
